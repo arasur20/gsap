@@ -244,11 +244,11 @@ body {
         @apply flex-center flex-col min-h-dvh p-5 mt-20 relative radial-gradient;
 
         h2 {
-            @apply relative md:text-[20vw] text-8xl text-nowrap leading-none font-modern-negra text-center text-[#505050] mb-8;
+            @apply relative md:text-[20vw] text-6xl text-nowrap leading-none font-modern-negra text-center text-[#505050] mb-8;
         }
 
         .content {
-            @apply flex md:flex-row flex-col justify-between md:mb-16 md:mt-0 mt-40 gap-10;
+            @apply flex md:mx-20 md:flex-row flex-col justify-between md:mb-16 md:mt-0 mt-40 gap-10;
         }
 
         .cocktail-img {
