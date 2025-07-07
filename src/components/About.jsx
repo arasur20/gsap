@@ -33,6 +33,7 @@ const About = () => {
         "-=0.5"
       );
   });
+
   return (
     <div id="about">
       <div className="mb-16 md:px-0 px-5">
@@ -61,28 +62,45 @@ const About = () => {
           </div>
         </div>
       </div>
+
       <div className="top-grid">
         <div className="md:col-span-3">
           <div className="noisy" />
-          <img src="/images/abt5.png" alt="image5" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/abt5.png`}
+            alt="image5"
+          />
         </div>
         <div className="md:col-span-6">
           <div className="noisy" />
-          <img src="/images/abt2.png" alt="image2" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/abt2.png`}
+            alt="image2"
+          />
         </div>
         <div className="md:col-span-3">
           <div className="noisy" />
-          <img src="/images/abt4.png" alt="image4" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/abt4.png`}
+            alt="image4"
+          />
         </div>
       </div>
+
       <div className="bottom-grid">
         <div className="md:col-span-8">
           <div className="noisy" />
-          <img src="/images/abt3.png" alt="image3" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/abt3.png`}
+            alt="image3"
+          />
         </div>
         <div className="md:col-span-4">
           <div className="noisy" />
-          <img src="/images/abt1.png" alt="image1" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/abt1.png`}
+            alt="image1"
+          />
         </div>
       </div>
     </div>

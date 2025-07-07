@@ -6,6 +6,7 @@ import gsap from "gsap";
 
 const Art = () => {
   const isMobile = useMediaQuery({ maxWidth: 760 });
+  const base = import.meta.env.BASE_URL;
 
   useGSAP(() => {
     const start = isMobile ? "top 20%" : "top top";
@@ -44,14 +45,14 @@ const Art = () => {
           <ul className="space-y-4 will-fade">
             {goodLists.map((feature, index) => (
               <li key={index} className="flex items-center gap-2">
-                <img src="/images/check.png" alt="checkmark" />
+                <img src={`${base}images/check.png`} alt="checkmark" />
                 <p>{feature}</p>
               </li>
             ))}
           </ul>
           <div className="cocktail-img">
             <img
-              src="/images/under-img.jpg"
+              src={`${base}images/under-img.jpg`}
               alt="cocktail"
               className="abs-center masked-img size-full object-contain"
             />
@@ -59,7 +60,7 @@ const Art = () => {
           <ul className="space-y-4 will-fade">
             {featureLists.map((feature, index) => (
               <li key={index} className="flex items-center justify-start gap-2">
-                <img src="/images/check.png" alt="checkmark" />
+                <img src={`${base}images/check.png`} alt="checkmark" />
                 <p>{feature}</p>
               </li>
             ))}
