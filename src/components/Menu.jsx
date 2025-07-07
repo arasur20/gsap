@@ -8,6 +8,7 @@ const Menu = () => {
   const [direction, setDirection] = useState("left");
 
   const totalCocktail = sliderLists.length;
+
   const gotoSlide = (index, direction) => {
     const newIndex = (index + totalCocktail) % totalCocktail;
     setDirection(direction);
@@ -38,15 +39,16 @@ const Menu = () => {
       ease: "power1.inOut",
     });
   }, [currentIndex]);
+
   return (
     <section id="menu" className="menu-heading">
       <img
-        src="/images/slider-left-leaf.png"
+        src={`${import.meta.env.BASE_URL}images/slider-left-leaf.png`}
         alt="left-leaf"
         id="m-left-leaf"
       />
       <img
-        src="/images/slider-right-leaf.png"
+        src={`${import.meta.env.BASE_URL}images/slider-right-leaf.png`}
         alt="right-leaf"
         id="m-right-leaf"
       />
@@ -80,7 +82,7 @@ const Menu = () => {
             onClick={() => gotoSlide(currentIndex - 1, "left")}
           >
             <img
-              src="/images/right-arrow.png"
+              src={`${import.meta.env.BASE_URL}images/right-arrow.png`}
               alt="right-arrow"
               aria-hidden="true"
             />
@@ -90,7 +92,7 @@ const Menu = () => {
             onClick={() => gotoSlide(currentIndex + 1, "right")}
           >
             <img
-              src="/images/left-arrow.png"
+              src={`${import.meta.env.BASE_URL}images/left-arrow.png`}
               alt="left-arrow"
               aria-hidden="true"
             />

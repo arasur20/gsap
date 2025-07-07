@@ -13,6 +13,7 @@ const Cocktails = () => {
         scrub: true,
       },
     });
+
     animateLeaf.from("#c-left-leaf", {
       x: -100,
       y: 100,
@@ -22,15 +23,16 @@ const Cocktails = () => {
       y: 100,
     });
   }, []);
+
   return (
     <section id="cocktails" className="noisy">
       <img
-        src="/images/cocktail-left-leaf.png"
+        src={`${import.meta.env.BASE_URL}images/cocktail-left-leaf.png`}
         id="c-left-leaf"
         alt="left-leaf"
       />
       <img
-        src="/images/cocktail-right-leaf.png"
+        src={`${import.meta.env.BASE_URL}images/cocktail-right-leaf.png`}
         id="c-right-leaf"
         alt="right-leaf"
       />
