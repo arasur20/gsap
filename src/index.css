@@ -171,11 +171,9 @@ body {
                     h3 {
                         @apply font-modern-negra 2xl:text-3xl text-xl text-yellow;
                     }
-
                     p {
                         @apply text-sm;
                     }
-
                     span {
                         @apply text-xl font-medium;
                     }

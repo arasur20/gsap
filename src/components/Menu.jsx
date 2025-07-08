@@ -79,7 +79,7 @@ const Menu = () => {
         <div className="arrows">
           <button
             className="text-left"
-            onClick={() => gotoSlide(currentIndex - 1, "left")}
+            onClick={() => gotoSlide(currentIndex - 1, "right")}
           >
             <img
               src={`${import.meta.env.BASE_URL}images/right-arrow.png`}
@@ -89,7 +89,7 @@ const Menu = () => {
           </button>
           <button
             className="text-right"
-            onClick={() => gotoSlide(currentIndex + 1, "right")}
+            onClick={() => gotoSlide(currentIndex + 1, "left")}
           >
             <img
               src={`${import.meta.env.BASE_URL}images/left-arrow.png`}

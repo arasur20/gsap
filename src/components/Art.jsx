@@ -30,7 +30,7 @@ const Art = () => {
       .to(".masked-img", {
         scale: 1.5,
         maskPosition: "center",
-        maskSize: "400%",
+        maskSize: "200%",
         duration: 1,
         ease: "power1.inOut",
       })
