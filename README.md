@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/arasur20/mojitoanimation/main/public/images/logo.png" alt="Logo" width="200" />
+  <img src="https://raw.githubusercontent.com/arasur20/mojitoanimation/main/public/images/logo.png" alt="Logo" width="100px" />
 </p>
 
 <h2 align="center">Velvet Pour</h2>
