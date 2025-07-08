@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div>
+      <div className="md:mx-20 mx-5">
         <a href="#home" className="flex items-center gap-2">
           <img
             src={`${import.meta.env.BASE_URL}images/logo.png`}
@@ -36,7 +36,7 @@ const Navbar = () => {
           />
           <p>Velvet Pour</p>
         </a>
-        <ul>
+        <ul className="md:mx-24 mx-5">
           {navLinks.map((link) => (
             <li key={link.id}>
               <a href={`#${link.id}`}>{link.title}</a>
